@@ -1,10 +1,25 @@
-#my-div {
-  width: 300px;
-  height: 200px;
-  border: 2px solid black;
-  overflow-y: auto;
+.container {
+    text-align: center;
+    margin-top: 50px;
 }
 
-a {
-  display: block;
+.poi-link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.poi-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .poi-link {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
 }
